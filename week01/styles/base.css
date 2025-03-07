@@ -1,0 +1,21 @@
+:root {
+    /* CSS HEX */
+--light-green: #87d68dff;
+--jonquil: rgb(236, 232, 212);
+--celadon: rgb(198, 243, 205);
+--red-munsell:rgb(240, 222, 202);
+--dark-slate-gray: #283f3bff;
+--background1:  rgb(232, 245, 240);
+--spinach: green;
+--font-family: "Libre Franklin";
+background-color:var(--celadon) ;
+}
+
+* {
+    font-family: var(--font-family);
+    color: var(--dark-slate-gray);
+    /* background-color: var(--celadon); */
+    max-width: 900px;
+    margin: 0 auto;
+    /* padding-top: 10px; */
+}
