@@ -1,0 +1,23 @@
+@media (min-width: 500px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1000px;
+    }
+    main h1 {
+        grid-column: 1/3;
+    }
+
+    .card:first-of-type {
+        grid-column: 1/2;
+    }
+}

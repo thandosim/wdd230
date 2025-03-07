@@ -1,0 +1,76 @@
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content:space-evenly;
+    background-color: aliceblue;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+header span {
+    font-size:2rem
+}
+
+header img {
+    border-radius: 10%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: blue;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+nav .active {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+main {
+    padding: 20px;
+    grid-column: 1/2;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 1px;
+}
+
+.card ul {
+    list-style-type: none;
+}

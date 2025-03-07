@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thandokuhle Simelane - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="This is Thandokuhle Simelane's Home page for the WDD 230 - Web Frontend Development course acting as a course assignment portal">
+    <meta name="author" content="Thandokuhle Simelane">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Profile Image" width="75" height="105">
+        <span>Thandokuhle Simelane</span>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="#" target="_blank">Home</a></li>
+            <li><a href="#" target="_blank">Chamber</a></li>
+            <li><a href="#" target="_blank">Site Plan</a></li>
+            <li><a href="#" target="_blank">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <p>Mbabane, Swaziland</p>
+            <p>Weather: <span id="weather-info">Sunny</span></p>
+            <p>Number of Visits: <span id="visit-count">3</span></p>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span>, 👤Thandokuhle Simelane, 🌍Mbabane, Swaziland</p>
+        <p>Last modified - <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
