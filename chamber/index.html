@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbabane City - Chamber of Commerce</title>
+    <meta name="description"
+        content="This webiste Showcases businesses based in Mbabane city, alowing interested business to join the CoC.">
+    <meta name="author" content="Thandokuhle Simelane">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+    <meta property="og:title" content="Mbabane City - Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thandosim.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://www.mbabane.org.sz/wp-content/uploads/2022/10/hom_0001_new-one.jpg" />
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Mbabane City CoC Logo" width="105" height="105">
+        <span>Mbabane City - Chamber Of Commerce</span>
+    </header>
+
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li class="active"><a href="#" target="_blank">Home</a></li>
+            <li><a href="#" target="_blank">Discover</a></li>
+            <li><a href="#" target="_blank">Directory</a></li>
+            <li><a href="#" target="_blank">Join</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="hero">
+            <img src="images\mbabane_hilton_view.jpg" alt="Mbabane city Hilton View">
+            <div class="hero-text">
+                <h1>Welcome to the Mbabane City - Chamber of Commerce</h1>
+                <p>A city on a mountain where the environment, people and commerce thrives.</p>
+            </div>
+        </div>
+
+        <section class="join">
+            <h3>Join The Chamber</h3>
+            <p>Join the Mbabane City - Chamber of Commerce for the full benefits .</p>
+            <p><a href="join.html" class="a-button">Join Us!</a></p>
+        </section>
+
+        <section class="card">
+            <h2>Current Events</h2>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmbabaneparkrun%2Fposts%2Fpfbid0TkrfDaocL88wRwn4QjRNxwomqD5VeczS9GNggrCKHiLwXpsu7p7KWjBLtnAhKTFFl&show_text=true&width=500" width="500" height="473" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <p>Mbabane City hosts a weekly parkrun event every saturday morning at the Golf Course. This 5km race starts at the Albert Millin Resturant and 
+                goes through the Rotary club, then the Golf course where it turns back to its starting point. 
+            </p>
+        </section>
+        <section class="card">
+            <h2>Weather</h2>
+            <p>Mbabane, Swaziland</p>
+            <p>Weather: <span id="weather-info">Sunny</span></p>
+            <p>Number of Visits: <span id="visit-count">3</span></p>
+        </section>
+        <section class="spotlight">
+            <h2>Business Spotlight</h2>
+            <div class="spot">
+                <h3>Hilton Garden Inn Mbabane</h3>
+                <img src="images/hilton.jpg" alt="view of Hilton Gardens Hotel">
+                <P>Plot 934 and 935 Mhlambanyatsi Road, Mbabane, H100, Eswatini</P>
+                <p>Hilton Garden Inn in Mbabane is located in the Central Business District near Swazi Plaza. The hotel offers an outdoor pool, restaurant, room service, and free WiFi. Nearby attractions include Sibebe Rock and Mlilwane Wildlife Sanctuary.</p>
+                <p><a href="https://www.hilton.com/en/hotels/qmngigi-hilton-garden-inn-mbabane/?msockid=38320ce7f8a56d730ece1867f9d56c61">Hilton Garden Inn Mbabane Website</a></p>
+            </div>
+            <div class="spot">
+                <h3>Swaziland Supply Center Mbabane</h3>
+                <img src="images/ssc.jpg" alt="view of Swaziland Supply Center">
+                <P>Industrial Site, LifeTech Centre, Siguca Cres, Mbabane H100, Eswatini</P>
+                <p>Swaziland Supply Centre (SSC) is a general retail and wholesale store located in Mbabane, Eswatini. They offer a wide range of quality branded products for home, office, outdoor, and industrial use. SSC has been in operation since 1969 and has multiple outlets in Mbabane and Manzini.</p>
+                <p><a href="https://www.ssc.co.sz">Swaziland Supply Center Website</a></p>
+            </div>
+            <div class="spot">
+                <h3>Mbabane Market</h3>
+                <img src="images/market.jpg" alt="view of mbabane market">
+                <P>Allister Miller Street, Mbabane, Hhohho H100</P>
+                <p>Mbabane Market is a vibrant and bustling market located on Allister Miller Street in Mbabane, Eswatini. It offers a variety of goods, including fresh produce, traditional crafts, and local cuisine. The market is a must-visit for tourists looking to experience local culture and find unique souvenirs</p>
+                <p><a href="https://www.mbabane.org.sz">Mbabane Market</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span>, 👤Thandokuhle Simelane, 🌍Mbabane, Swaziland</p>
+        <p>Last modified - <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
