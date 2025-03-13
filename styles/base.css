@@ -109,3 +109,7 @@ h1 {
 .card ul {
     list-style-type: none;
 }
+
+.card a:visited {
+    color: inherit; 
+  }
