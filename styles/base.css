@@ -9,6 +9,16 @@ body {
     background-color: aliceblue;
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+
 header {
     display: grid;
     grid-template-columns: 2fr 5fr 1fr;
