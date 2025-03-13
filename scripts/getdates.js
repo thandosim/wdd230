@@ -1,6 +1,7 @@
 const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
+const main = document.querySelector("body");
 const cards = document.querySelectorAll(".card");
+
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🕶️")) {
