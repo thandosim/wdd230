@@ -136,3 +136,10 @@ h1 {
     list-style-type: none;
     background-color: #222;
 }
+
+footer {
+    background: blue;
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+}
