@@ -18,5 +18,10 @@ p {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
   
   
