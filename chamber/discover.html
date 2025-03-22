@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbabane City - Chamber of Commerce</title>
+    <meta name="description"
+        content="This webiste Showcases businesses based in Mbabane city, alowing interested business to join the CoC.">
+    <meta name="author" content="Thandokuhle Simelane">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+    <meta property="og:title" content="Mbabane City - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thandosim.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://www.mbabane.org.sz/wp-content/uploads/2022/10/hom_0001_new-one.jpg">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Mbabane City CoC Logo" width="105" height="105">
+        <span>Mbabane City - Chamber Of Commerce</span>
+        <button id="menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li class="active"><a href="discover.html" target="_blank">Discover</a></li>
+            <li><a href="#" target="_blank">Directory</a></li>
+            <li><a href="#" target="_blank">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="join">
+            <h2>Discover Mbabane!</h3>
+            <p id="welcome-message"></p>
+        </section>
+        <aside class="sidebar">
+            <h2>Mbabane Demographics</h2>
+            <ul>
+                <li>Population: ~95,000</li>
+                <li>Average Age: 31</li>
+                <li>Languages: Swazi, English</li>
+            </ul>
+    
+            <h2>Upcoming Events in Mbabane</h2>
+            <ul>
+                <li>Annual Business Expo: April 15</li>
+                <li>Craft and Culture Fair: May 6</li>
+                <li>City Marathon: June 10</li>
+            </ul>
+    
+            <h2>Attractions</h2>
+            <ul>
+                <li>Mbabane Market</li>
+                <li>Mlawula Nature Reserve</li>
+                <li>Ngwenya Glass Factory</li>
+            </ul>
+    
+            <h2>Your Visit</h2>
+            <p id="visit-message">Welcome to Mbabane! Let us know if you have any questions.</p>
+        </aside>
+    
+        <section class="gallery">
+            <h2>Explore Mbabane</h2>
+            <div class="images">
+                <figure>
+                    <img src="images/market.webp" alt="Mbabane Market" width="400" height="300" loading="lazy">
+                    <figcaption>Mbabane Market - A bustling hub for crafts and goods.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/mountain.webp" alt="Mountains near Mbabane" width="400" height="300" loading="lazy">
+                    <figcaption>Stunning mountain views near the city.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature-reserve.webp" alt="Malolotja Nature Reserve" width="400" height="300" loading="lazy">
+                    <figcaption>Malolotja Nature Reserve - Perfect for wildlife enthusiasts.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ngwenya-glass.webp" alt="Ngwenya Glass Factory" width="400" height="300" loading="lazy">
+                    <figcaption>Ngwenya Glass Factory - Art and sustainability combined.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/culture-fair.webp" alt="Cultural Fair in Mbabane" width="400" height="300" loading="lazy">
+                    <figcaption>Experience the vibrant Cultural Fair.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/mbabane-cityscape.webp" alt="Mbabane Cityscape" width="400" height="300" loading="lazy">
+                    <figcaption>The scenic cityscape of Mbabane.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Mbabane City - Chamber of Commerce - email: tdmpembe@live.com - call: +268 2404 1163</p>
+        <p> &copy; <span id="currentyear"></span>, 👤Thandokuhle Simelane, 🌍Mbabane, Swaziland</p>
+        <p>Last modified - <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
