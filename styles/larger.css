@@ -1,4 +1,7 @@
 @media (min-width: 500px) {
+    body {
+        max-width: 960px;
+    }
     #menu {
         display: none;
     }

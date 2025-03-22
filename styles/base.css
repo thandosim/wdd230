@@ -1,12 +1,13 @@
 
 body {
     font-family: "Libre Franklin", sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: grid;
     grid-template-columns: auto;
     justify-content:space-evenly;
     background-color: aliceblue;
+    max-width: 500px;
 }
 
 #mode {
@@ -95,6 +96,40 @@ main {
     grid-column: 1/2;
 }
 
+.hero {
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	/* height: 300px; */
+    grid-column: 1/3;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: radial-gradient(#fff, #b0b9e0);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 0.2rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 0.6rem;
+	/* font-family:"Great Vibes", serif; */
+}
+
 h1 {
     text-align: center;
 }
@@ -113,3 +148,8 @@ h1 {
 .card a:visited {
     color: inherit; 
   }
+
+iframe {
+    padding: 1rem;
+    margin: 0 auto;
+}

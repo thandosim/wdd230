@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Thandokuhle's profile image " width="75" height="105">
+        <img src="images/profile.webp" alt="Thandokuhle's profile image " width="75" height="105" loading="lazy">
         <span>Thandokuhle Simelane</span>
         <button id="menu"></button>
         <div id="mode">
@@ -37,6 +37,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/durban-temple-small.webp">
+                <img src="images/durban-temple.webp" alt="Durban temple at dusk" width="960" height="600" loading="lazy">
+            </picture>
+            <div class="herolabel">
+                <p>Durban South Africa Temple</p>
+            </div>
+        </div>
+        
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -53,9 +63,10 @@
             <h2>Information</h2>
             <p>Mbabane, Swaziland</p>
             <p>Weather: <span id="weather-info">Sunny</span></p>
-            <p>Number of Visits: <span id="visit-count">3</span></p>
+            <p>Number of Visits: <span id="visit-count"></span></p>
         </section>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5162.279777029146!2d31.093123251789905!3d-26.41901582714202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1742628508674!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p> &copy; <span id="currentyear"></span>, 👤Thandokuhle Simelane, 🌍Mbabane, Swaziland</p>
         <p>Last modified - <span id="lastModified"></span></p>

@@ -31,6 +31,19 @@ hamButton.addEventListener('click', () => {
 });
 
 
+const visitsDisplay = document.querySelector("#visit-count");
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit.`;
+}
+
+numVisits++;
+localStorage.setItem("numVisits-ls", numVisits);
+
+
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById("currentyear").innerHTML = year;
