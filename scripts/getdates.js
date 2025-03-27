@@ -31,6 +31,26 @@ hamButton.addEventListener('click', () => {
 });
 
 
+
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("currentyear").innerHTML = year;
+
+document.getElementById("lastModified").textContent = document.lastModified;
+
+function validatePasswords() {
+	const password = document.getElementById('password');
+	const confirmPassword = document.getElementById('confirmPassword');
+
+	// Compare passwords only when the second input is filled
+	if (confirmPassword.value !== "" && password.value !== confirmPassword.value) {
+		confirmPassword.setCustomValidity("Passwords do not match!"); // Show custom message
+	} else {
+		confirmPassword.setCustomValidity(""); // Clear message if valid
+	}
+}
+
+
 const visitsDisplay = document.querySelector("#visit-count");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
@@ -42,10 +62,3 @@ if (numVisits !== 0) {
 
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
-
-
-var date = new Date();
-var year = date.getFullYear();
-document.getElementById("currentyear").innerHTML = year;
-
-document.getElementById("lastModified").textContent = document.lastModified;

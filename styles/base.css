@@ -1,6 +1,13 @@
+:root {
+    --background-color: blue;
+    --text-color: white; 
+    --hover-background-color: rgba(255,255,255,0.2); 
+	--main-font: 'Libre Franklin', sans-serif; 
+}
+
 
 body {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: var(--main-font);
     margin: 0 auto;
     padding: 0;
     display: grid;
@@ -61,8 +68,8 @@ h1 {
 	flex-direction: column;
 	justify-content: space-evenly;
 	list-style: none;
-	background-color: blue;
-	color: #fff;
+	background-color:var(--background-color);
+	color: var(--text-color);
 }
 
 .navigation a {
@@ -70,11 +77,11 @@ h1 {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--text-color);
 }
 .navigation a:hover {
 	background-color: rgba(255,255,255,0.2);
-	color: #fff;
+	color: var(--text-color);
 	font-weight: 700;
 }
 
@@ -150,4 +157,48 @@ h1 {
 iframe {
     padding: 1rem;
     margin: 0 auto;
+}
+
+form {
+	width: 480px ;
+}
+
+form fieldset {
+    border: 2px solid #ddd; /* Adds a clear border for the fieldset */
+    padding: 15px; /* Provides spacing inside the fieldset */
+    margin-bottom: 20px; /* Adds space between fieldsets */
+	grid-column: 1/5;
+}
+
+form legend {
+    font-weight: bold; /* Makes the legend text stand out */
+    padding: 0 10px; /* Adds spacing inside the legend */
+}
+
+form label {
+    display: block; /* Ensures labels appear above inputs */
+    margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+form input, select, textarea, button {
+    width: 100%; /* Ensures input fields stay within boundaries */
+	height: 48px;
+    padding: 10px; /* Adds spacing inside inputs for a polished look */
+    box-sizing: border-box; /* Ensures padding doesn’t overflow container */
+    font-size: 16px; /* Improves readability */
+}
+
+button[type="submit"] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: darkblue; /* Provides visual feedback */
 }
