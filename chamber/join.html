@@ -41,7 +41,77 @@
     </nav>
 
     <main>
-        
+        <section class="form-container">
+            <form method="get" action="thankyou.html">
+                <!-- Applicant's First Name -->
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>
+                        First Name:
+                        <input type="text" id="first-name" name="first-name" required>
+                    </label>
+                    <label>
+                        Last Name:
+                        <input type="text" id="last-name" name="last-name" required>
+                    </label>
+                    <label>
+                        Title/Position:
+                        <input type="text" id="position" name="position" 
+                               pattern="[A-Za-z\- ]{7,}" 
+                               title="Only letters, hyphens, and spaces are allowed, with a minimum of 7 characters">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" id="email" name="email" required 
+                               placeholder="example@email.com">
+                    </label>
+                    <label>
+                        Mobile Phone Number:
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                </fieldset>
+            
+                <!-- Business Information -->
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>
+                        Organization Name:
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+                    <label>
+                        Membership Level:
+                        <select id="membership-level" name="membership-level" required>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>
+                        Organization Description:
+                        <textarea id="description" name="description"></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                </fieldset>
+            
+                <!-- Submit Button -->
+                <label>
+                    <input type="submit" value="Join the Chamber">
+                </label>
+            </form>
+            
+
+            <!-- Membership Benefits -->
+            <aside class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li>NP Membership: Access to select events. Free</li>
+                    <li>Bronze Membership: Event discounts and basic training. $100</li>
+                    <li>Silver Membership: Spotlight advertising and advanced training. $200</li>
+                    <li>Gold Membership: Premium benefits including networking and promotional services. $300</li>
+                </ul>
+            </aside>
+        </section>
     </main>
 
     <footer>

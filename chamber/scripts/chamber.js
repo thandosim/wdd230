@@ -28,6 +28,8 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 localStorage.setItem("lastVisit-ls",theDateToday);
 
+document.getElementById("timestamp").value = new Date().toISOString();
+
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById("currentyear").innerHTML = year;

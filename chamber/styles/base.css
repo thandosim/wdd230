@@ -143,3 +143,47 @@ footer {
     text-align: center;
     color: #fff;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input, select {
+    min-height: 50px;
+}
+
+input:required {
+    border-bottom: 10px blue solid;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; 
+}
+
+#thankyou {
+    grid-column: 2/4;
+}
