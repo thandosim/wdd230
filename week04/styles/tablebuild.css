@@ -1,0 +1,31 @@
+main {
+    max-width: 480px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+thead {
+    background-color: #4d4d4d; /* Dark gray for the heading */
+    color: white; /* White text for contrast */
+}
+th:first-child {
+    background-color: #4d4d4d; /* Dark gray for the "Feature" column */
+    color: white;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping */
+}
+caption {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    caption-side: bottom;
+}

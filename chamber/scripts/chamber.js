@@ -15,7 +15,7 @@ const differenceInDays = (theDateToday - lastVisit) / msToDays;
 
 if (numVisits !== 0) {
 	if (differenceInDays>1) {
-		message.textContent = `You last visited ${differenceInDays} days ago.`;
+		message.textContent = `You last visited ${Math.ceil(differenceInDays)} days ago.`;
 	}
 	else{
 		message.textContent = `Back so soon! Awesome!`
