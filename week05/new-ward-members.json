@@ -1,0 +1,22 @@
+{
+    "family-name": "Masibekela",
+    "date-moved-in": 2022,
+    "number-of-records": 3,
+    "visited-by-bishopric": true,
+    "family-members":[
+        {
+            "name": "Him Masibekela",
+            "gender": "male",
+            "birthdate":1995
+        },
+        {
+            "name": "Hert Masibekela",
+            "gender": "female",
+            "birthdate":1997
+        },{
+            "name": "Thandokuhle Simelane",
+            "gender": "male",
+            "birthdate":2023
+        }
+    ]
+}
