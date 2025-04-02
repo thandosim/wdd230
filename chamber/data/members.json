@@ -49,6 +49,24 @@
             "membership_level": "Bronze",
             "industry": "Environmental Services",
             "established_year": 2000
+        },
+        {
+            "name": "Mbabane Travel Solutions",
+            "address": "12 Wanderer Lane, Mbabane, Hhohho",
+            "phone": "+268 2403 5678",
+            "website": "https://www.mbabanetravel.com/",
+            "membership_level": "Silver",
+            "industry": "Tourism",
+            "established_year": 2010
+        },
+        {
+            "name": "Royal Print Hub",
+            "address": "Printing Plaza, Mbabane, Hhohho Region",
+            "phone": "+268 2404 7890",
+            "website": "https://www.royalprinthub.co.sz/",
+            "membership_level": "Gold",
+            "industry": "Printing and Media",
+            "established_year": 2005
         }
     ]
 }
