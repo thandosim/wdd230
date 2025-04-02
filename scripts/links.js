@@ -30,7 +30,7 @@ const displayLinks = (data) => {
             url.textContent = `${link.title}`;
 
             weekItem.appendChild(url);        
-        })
+        });
 
         weeks.appendChild(weekItem);
 
