@@ -1,0 +1,80 @@
+{
+    "weeks": [
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "https://codepen.io/thandosim/pen/PwoJWPq",
+                    "title": "Responsive Hamburger Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Object Manipulation"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "lazyload"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "responsive images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "Advanced BoM activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/thandosim/pen/dPyqMrE",
+                    "title": "pseudo classes"
+                },
+                {
+                    "url": "week04/images/w4-w3schools.png",
+                    "title": "combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "tables"
+                },
+                {
+                    "url": "week04/Form-start/index.html",
+                    "title": "form"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/thandosim/pen/vEYvYyb",
+                    "title": "pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON practice"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "fetch.api"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        }
+    ]
+}
