@@ -8,7 +8,7 @@ async function getLinks() {
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayLinks(data)
         } else {
             throw Error(await response.text());
