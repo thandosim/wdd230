@@ -8,31 +8,36 @@ async function getLinks() {
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
-            displayLinks(data)
+            displayLinks(data.weeks); // Pass the 'weeks' array into the displayLinks function
         } else {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        console.error("Error fetching links:", error);
     }
 }
 
 getLinks();
 
-const displayLinks = (data) => {
-    data.forEach((week) => {
+const displayLinks = (weeksData) => {
+    weeksData.forEach((week) => {
+        // Create a list item for the week
         let weekItem = document.createElement("li");
-        weekItem.textContent = `${week.week} :`;
-        week.forEach((link) => {
+        weekItem.textContent = `${week.week}: `;
+
+        // Create a nested unordered list for the links
+        let linksList = document.createElement("ul");
+        week.links.forEach((link) => {
+            let listItem = document.createElement("li");
             let url = document.createElement("a");
             url.setAttribute('href', link.url);
-            url.textContent = `${link.title}`;
+            url.textContent = link.title;
 
-            weekItem.appendChild(url);        
+            listItem.appendChild(url);
+            linksList.appendChild(listItem);
         });
 
+        weekItem.appendChild(linksList);
         weeks.appendChild(weekItem);
-
     });
-}
+};
