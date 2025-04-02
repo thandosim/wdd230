@@ -1,0 +1,54 @@
+{
+    "members": [
+        {
+            "name": "Swaziland Industrial Development Company (SIDC)",
+            "address": "Cnr Mdada & Lalufadlana Street, Mbabane, Hhohho, H100",
+            "phone": "+268 2404 4010",
+            "website": "https://www.idce.co.sz/",
+            "icon": "sidc_logo.png",
+            "membership_level": "Gold",
+            "industry": "Industrial Development",
+            "established_year": 1987
+        },
+        {
+            "name": "Eswatini Electricity Company (EEC)",
+            "address": "Mbabane, Hhohho, H100",
+            "phone": "+268 3401 1100",
+            "website": "https://www.eec.co.sz/",
+            "icon": "eec_logo.png",
+            "membership_level": "Silver",
+            "industry": "Energy",
+            "established_year": 1963
+        },
+        {
+            "name": "Eswatini Development Finance Corporation (FINCORP)",
+            "address": "Fincorp Building, Corner of Gwamile Street and Dabede Street, P.O Box 6099, Mbabane, Hhohho, H100",
+            "phone": "+268 2409 2000",
+            "website": "https://www.fincorp.co.sz/",
+            "icon": "fincorp_logo.png",
+            "membership_level": "Platinum",
+            "industry": "Finance",
+            "established_year": 1995
+        },
+        {
+            "name": "EPTC - Phutfumani Building",
+            "address": "Mahlokohla Street, Mbabane, Hhohho Region, H100",
+            "phone": "+268 2405 2000",
+            "website": "https://www.sptc.co.sz/contact.php",
+            "icon": "eptc_logo.png",
+            "membership_level": "Gold",
+            "industry": "Telecommunications",
+            "established_year": 1986
+        },
+        {
+            "name": "Eco Plus",
+            "address": "Mbabane, Hhohho",
+            "phone": "N/A",
+            "website": "N/A",
+            "icon": "eco_plus_logo.png",
+            "membership_level": "Bronze",
+            "industry": "Environmental Services",
+            "established_year": 2000
+        }
+    ]
+}
