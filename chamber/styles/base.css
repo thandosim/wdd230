@@ -187,3 +187,37 @@ input[type="submit"]:hover {
 #thankyou {
     grid-column: 2/4;
 }
+
+#cards {
+
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* #cardslist {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.grid {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+}

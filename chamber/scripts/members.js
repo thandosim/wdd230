@@ -12,11 +12,12 @@ displayMembers(data.members);
 
 getMemberData();
 
+
 const displayMembers = (members) => {
     members.forEach((member) => {
         // Create a card for each member
         let card = document.createElement("section");
-        let name = document.createElement("h2");
+        let name = document.createElement("h3");
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let website = document.createElement("a");
@@ -30,6 +31,7 @@ const displayMembers = (members) => {
         website.textContent = "Visit Website";
         website.setAttribute('href', member.website);
         website.setAttribute('target', '_blank');
+        card.setAttribute("class","grid");
 
         // Append member details to the card
         card.appendChild(name);
@@ -42,3 +44,24 @@ const displayMembers = (members) => {
         document.querySelector("#cards").appendChild(card);
     });
 };
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#cards");
+
+const cardsContainer = document.getElementById("cards");
+
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+	display.classList.remove("list");
+    cardsContainer.style.display = "grid";
+    cardsContainer.style.gridTemplateColumns = "repeat(auto-fit, minmax(320px, 1fr))";
+});
+
+listbutton.addEventListener("click", () => {
+    display.classList.add("list");
+	display.classList.remove("grid");
+    cardsContainer.style.display = "flex";
+    cardsContainer.style.flexDirection = "column";
+});
