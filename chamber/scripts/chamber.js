@@ -6,6 +6,23 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("meet-and-greet-banner");
+    const closeButton = document.getElementById("close-banner");
+
+    // Determine the current day of the week
+    const currentDay = new Date().getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+
+    // Show banner only on Monday, Tuesday, or Wednesday
+    if (currentDay >= 1 && currentDay <= 3) {
+        banner.style.display = "block"; // Display banner
+    }
+
+    // Add event listener to close the banner
+    closeButton.addEventListener("click", () => {
+        banner.style.display = "none"; // Hide banner
+    });
+});
 
 
 var date = new Date();
@@ -117,3 +134,43 @@ if (numVisits !== 0) {
 
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
+
+async function fetchAndPopulateSpotlight() {
+    try {
+        const response = await fetch('data/members.json'); // Fetch data from the JSON file
+        if (response.ok) {
+            const data = await response.json();
+            populateSpotlight(data.members);
+        } else {
+            throw new Error("Failed to fetch members data.");
+        }
+    } catch (error) {
+        console.error("Error fetching members data:", error);
+    }
+}
+
+function populateSpotlight(members) {
+    const spotlightContainer = document.querySelector('.spotlight');
+    spotlightContainer.innerHTML = `<h2>Business Spotlight</h2>`; // Clear and reset header
+
+    // Randomly select 3 businesses
+    const shuffledMembers = members.sort(() => 0.5 - Math.random());
+    const selectedMembers = shuffledMembers.slice(0, 3); // Select 3 random members
+
+    // Generate business cards
+    selectedMembers.forEach(member => {
+        const businessCard = `
+            <div class="spot">
+                <h3>${member.name}</h3>
+                <img src="${member.image_url}" alt="Image of ${member.name}" width="300"  loading="lazy">
+                <p>${member.address}</p>
+                <p>${member.business_description}</p>
+                <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+            </div>
+        `;
+        spotlightContainer.innerHTML += businessCard;
+    });
+}
+
+// Fetch and populate the spotlight section
+fetchAndPopulateSpotlight();

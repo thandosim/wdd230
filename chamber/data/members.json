@@ -7,7 +7,9 @@
             "website": "https://www.idce.co.sz/",
             "membership_level": "NP",
             "industry": "Industrial Development",
-            "established_year": 1987
+            "established_year": 1987,
+            "image_url": "images/sidc.jpg",
+            "business_description": "SIDC focuses on industrial development and provides financial support and investment opportunities in Eswatini to promote sustainable economic growth."
         },
         {
             "name": "Eswatini Electricity Company (EEC)",
@@ -16,7 +18,9 @@
             "website": "https://www.eec.co.sz/",
             "membership_level": "Silver",
             "industry": "Energy",
-            "established_year": 1963
+            "established_year": 1963,
+            "image_url": "images/eec.jpg",
+            "business_description": "EEC is a state-owned enterprise that generates, transmits, and distributes electricity within Eswatini, ensuring reliable energy solutions for businesses and households."
         },
         {
             "name": "Eswatini Development Finance Corporation (FINCORP)",
@@ -25,7 +29,9 @@
             "website": "https://www.fincorp.co.sz/",
             "membership_level": "Gold",
             "industry": "Finance",
-            "established_year": 1995
+            "established_year": 1995,
+            "image_url": "images/fincorp.jpg",
+            "business_description": "FINCORP provides accessible financial solutions, including loans and investment services, to stimulate entrepreneurship and economic development in Eswatini."
         },
         {
             "name": "EPTC - Phutfumani Building",
@@ -34,34 +40,76 @@
             "website": "https://www.sptc.co.sz/contact.php",
             "membership_level": "Gold",
             "industry": "Telecommunications",
-            "established_year": 1986
+            "established_year": 1986,
+            "image_url": "images/eptc.jpg",
+            "business_description": "EPTC offers a range of telecommunications solutions, including internet and phone services, to keep businesses and individuals connected in Eswatini."
         },
         {
             "name": "Eco Plus",
             "address": "Mbabane, Hhohho",
             "phone": "N/A",
-            "website": "N/A",
+            "website": "https://www.facebook.com/eco.plus/",
             "membership_level": "Bronze",
             "industry": "Environmental Services",
-            "established_year": 2000
+            "established_year": 2000,
+            "image_url": "images/ecoplus.jpg",
+            "business_description": "Eco Plus focuses on environmental preservation and offers consulting and services to promote sustainable practices in Eswatini."
         },
         {
-            "name": "Mbabane Travel Solutions",
+            "name": "Amahle Travel Solutions",
             "address": "12 Wanderer Lane, Mbabane, Hhohho",
             "phone": "+268 2403 5678",
-            "website": "https://www.mbabanetravel.com/",
+            "website": "https://www.facebook.com/AmahleTours/",
             "membership_level": "Silver",
             "industry": "Tourism",
-            "established_year": 2010
+            "established_year": 2010,
+            "image_url": "images/amahle.jpg",
+            "business_description": "Amahle Travel Solutions specializes in travel planning and provides customized packages to help tourists and locals explore Eswatini and beyond."
         },
         {
-            "name": "Royal Print Hub",
+            "name": "Apollo Printers",
             "address": "Printing Plaza, Mbabane, Hhohho Region",
             "phone": "+268 2404 7890",
-            "website": "https://www.royalprinthub.co.sz/",
+            "website": "https://www.facebook.com/printapollo/",
             "membership_level": "Gold",
             "industry": "Printing and Media",
-            "established_year": 2005
+            "established_year": 2005,
+            "image_url": "images/apollo.jpg",
+            "business_description": "Apollo Printers offers high-quality printing and media solutions, catering to businesses and individuals with innovative branding and marketing materials."
+        },
+        {
+            "name": "Hilton Garden Inn Mbabane",
+            "address": "Plot 934 and 935 Mhlambanyatsi Road, Mbabane, H100, Eswatini",
+            "phone": "N/A",
+            "website": "https://www.hilton.com/en/hotels/qmngigi-hilton-garden-inn-mbabane/?msockid=38320ce7f8a56d730ece1867f9d56c61",
+            "membership_level": "Gold",
+            "industry": "Hospitality",
+            "established_year": "N/A",
+            "image_url": "images/hilton.jpg",
+            "business_description": "Hilton Garden Inn Mbabane offers comfortable accommodations with amenities such as an outdoor pool, restaurant, and free WiFi, making it an ideal stay for business or leisure."
+        },
+        {
+            "name": "Swaziland Supply Center Mbabane",
+            "address": "Industrial Site, LifeTech Centre, Siguca Cres, Mbabane H100, Eswatini",
+            "phone": "N/A",
+            "website": "https://www.ssc.co.sz",
+            "membership_level": "Silver",
+            "industry": "Retail and Wholesale",
+            "established_year": 1969,
+            "image_url": "images/ssc.jpg",
+            "business_description": "Swaziland Supply Center offers a wide range of branded products for home, office, outdoor, and industrial needs, with multiple outlets serving Mbabane and Manzini."
+        },
+        {
+            "name": "Mbabane Market",
+            "address": "Allister Miller Street, Mbabane, Hhohho H100",
+            "phone": "N/A",
+            "website": "https://www.mbabane.org.sz",
+            "membership_level": "Bronze",
+            "industry": "Market and Tourism",
+            "established_year": "N/A",
+            "image_url": "images/market.jpg",
+            "business_description": "Mbabane Market is a vibrant hub for fresh produce, traditional crafts, and local cuisine, offering a unique glimpse into Eswatini's culture."
         }
     ]
 }
+
