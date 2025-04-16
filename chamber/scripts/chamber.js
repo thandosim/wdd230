@@ -15,13 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show banner only on Monday, Tuesday, or Wednesday
     if (currentDay >= 1 && currentDay <= 3) {
-        banner.style.display = "block"; // Display banner
+        if (banner) {
+            banner.style.display = "block"; // Display banner
+        }
     }
 
     // Add event listener to close the banner
-    closeButton.addEventListener("click", () => {
-        banner.style.display = "none"; // Hide banner
-    });
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            banner.style.display = "none"; // Hide banner
+        })
+    };
 });
 
 
@@ -118,18 +122,23 @@ function displayResults2(data) {
         forecastContainer.appendChild(dayElement);
     });
 }
-
-apiFetch2();
+if (document.getElementById("weather_info")) {
+    apiFetch2();
+}
 
 
 
 const visitsDisplay = document.querySelector("#visit-count");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+if (visitsDisplay) {
+    if (numVisits !== 0) {
+        visitsDisplay.textContent = numVisits;
+    } else {
+        visitsDisplay.textContent = `This is your first visit.`;
+    }
 } else {
-	visitsDisplay.textContent = `This is your first visit.`;
+    console.warn('Element not found on this page');
 }
 
 numVisits++;
@@ -173,4 +182,6 @@ function populateSpotlight(members) {
 }
 
 // Fetch and populate the spotlight section
-fetchAndPopulateSpotlight();
+if (document.querySelector('.spotlight')) {
+    fetchAndPopulateSpotlight();
+}
