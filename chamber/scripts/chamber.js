@@ -122,7 +122,7 @@ function displayResults2(data) {
         forecastContainer.appendChild(dayElement);
     });
 }
-if (document.getElementById("weather_info")) {
+if (document.getElementById("weather-info")) {
     apiFetch2();
 }
 
